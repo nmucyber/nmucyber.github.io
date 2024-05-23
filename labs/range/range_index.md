@@ -12,4 +12,4 @@ Virtual machines in the cyber.org range have limited internet access. Do not use
 
 ## Lab Objectives
 
-* [Server a Website from Kali](kali_serve_windows\serve_kali_site.md)
+* [Serve a Website from Kali](kali_serve_windows/serve_kali_site.md)
