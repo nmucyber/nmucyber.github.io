@@ -32,21 +32,21 @@ In this lab, you will:
     * Username: vphtfq
     * Password: xcbqf6yw
 
-![Login](login.png)
+    ![Login](login.png)
 
 3. Open the classroom by clicking on the classroom link. (Your classroom may differ from the screenshot.)
 
-![Classroom](open_classroom.png)
+    ![Classroom](open_classroom.png)
 
 ## 2) Launch Virtual Machines
 
 1. Click the **launch** buttons for the Kali Linux and Windows 7 virtual machines.
 
-![Launch VMs](launch_vm_buttons.png)
+    ![Launch VMs](launch_vm_buttons.png)
 
-The virtual machines will take a few minutes to boot. You can monitor their progress.
+    The virtual machines will take a few minutes to boot. You can monitor their progress.
 
-![Booting](booting.png)
+    ![Booting](booting.png)
 
 ## 3) Kali Configuration
 
@@ -54,76 +54,76 @@ In this section, you will configure Kali Linux to server web pages.
 
 1. Once the Kali VM has finished booting, click **Connect**.
 
-![Kali Connect Button](kali_connect.png)
+    ![Kali Connect Button](kali_connect.png)
 
 2. Your Kali VM will open in your browser. You have access to the Kali Linux graphical user interface.
 
-![Kali Desktop](kali_desktop.png)
+    ![Kali Desktop](kali_desktop.png)
 
 3. Click the terminal icon to launch the terminal.
 
-![Kali Terminal Icon](terminal_icon.png)
+    ![Kali Terminal Icon](terminal_icon.png)
 
 4. Note your private IP address in the terminal prompt.
 
-![Kali IP Address](kali_ip.png)
+    ![Kali IP Address](kali_ip.png)
 
 5. Run the following commands.
 
-```shell
-sudo su
-cd /var/www/html
-echo "I am alive!" > hello.txt
-systemctl start apache2
-```
+    ```shell
+    sudo su
+    cd /var/www/html
+    echo "I am alive!" > hello.txt
+    systemctl start apache2
+    ```
 
-After entering the `sudo su` command, your terminal should look like the following:
+    After entering the `sudo su` command, your terminal should look like the following:
 
-![Kali Commands](commands_run.png)
+    ![Kali Commands](commands_run.png)
 
-If any of the commands give you errors, just rerun them. If everything goes well, Kali will not tell you that the commands succeeded.
+    If any of the commands give you errors, just rerun them. If everything goes well, Kali will not tell you that the commands succeeded.
 
-These commands:
+    These commands:
 
-* Switch to the **root** account (which is required to write files to the `/var/www/html` directory).
-* Changes directories to `/var/www/html`.
-* Creates a file called `hello.txt` with the contents, "I am alive!"
-* Starts the Apache web server.
+    * Switch to the **root** account (which is required to write files to the `/var/www/html` directory).
+    * Changes directories to `/var/www/html`.
+    * Creates a file called `hello.txt` with the contents, "I am alive!"
+    * Starts the Apache web server.
 
-Now, Kali Linux is serving a website. **Note the IP address in the terminal prompt (such as 10.15.56.246).
+    Now, Kali Linux is serving a website. **Note the IP address in the terminal prompt (such as 10.15.56.246).
 
 ## 4) Windows 7 Testing
 
 1. At the top of your web browser, click **Other Machines**.
 
-![Other Machines](other_button.png)
+    ![Other Machines](other_button.png)
 
 2. Click **Connect** on the Windows 7 virtual machine.
 
-![Windows 7 Connect](win7_connect_button.png)
+    ![Windows 7 Connect](win7_connect_button.png)
 
 3. Click on the desktop to close the connection popup window.
 4. Open a web browser on the Windows desktop. Chrome works well, though it can be a bit slow.
 5. Enter the IP address of your Kali VM in the URL. You should see the default web server homepage.
 
-![Default Homepage](debian_homepage.png)
+    ![Default Homepage](debian_homepage.png)
 
 6. Add **/hello.txt** to the url. You should see the contents of the file you created on the Kali VM.
 
-![Hello.txt served](hello_served.png)
+    ![Hello.txt served](hello_served.png)
 
 7. Right-click in the browser and choose "Save as...".
 
-![Save as](save_as.png)
+    ![Save as](save_as.png)
 
 8. Choose the Desktop folder, and click Save.
 
-![Save to Desktop](save_to_desktop.png)
+    ![Save to Desktop](save_to_desktop.png)
 
 9. Close the browser.
 10. The "hello" text file should be on the desktop. Double-click it to open it.
 
-![Hello.txt in Notepad](hello_in_notepad.png)
+    ![Hello.txt in Notepad](hello_in_notepad.png)
 
 ## Lab Summary
 
