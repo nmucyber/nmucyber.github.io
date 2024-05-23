@@ -16,7 +16,7 @@
 title: NMU Cyber
 description: >- # this means to ignore newlines until "baseurl:"
   Northern Michigan University uses this site to post content.
-  This content is developed by the Upper Peninsula Cyersecurity Institute
+  This content is developed by the Upper Peninsula Cyersecurity Institute.
   in partnership with Northern Michigan University's academic programs.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://nmucyber.github.io" # the base hostname & protocol for your site, e.g. http://example.com

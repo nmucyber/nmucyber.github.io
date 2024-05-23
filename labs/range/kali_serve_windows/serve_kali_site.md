@@ -2,7 +2,10 @@
 layout: page
 title: Serve a Website from Kali
 permalink: /labs/range/kali1/
+exclude: true
 ---
+
+Author: Dr. Jim Marquardson, 2024-05-22
 
 In this lab, you will serve a website from Kali. You will use a Windows virtual machine to access the website. This lab can be done from the cyber.org range.
 
